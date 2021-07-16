@@ -65,6 +65,6 @@ Similarly for server, follow the given steps in a sepesrate termianl:
 ![image 4](https://assets.devfolio.co/hackathons/203325236b8942808406b7b0ba9ffd2e/projects/bd090e80fcea4494bb8729f3942fc49f/7cca8955-f129-410d-82f6-82fb900360da.png)
 ![image 5](https://assets.devfolio.co/hackathons/203325236b8942808406b7b0ba9ffd2e/projects/bd090e80fcea4494bb8729f3942fc49f/ceb29d8e-8380-4079-87bd-a1bc1580bc8d.png)
 ## :desktop_computer: References
-1. [Losses due to supply chain](https://www.moneylife.in/article/india-loses-65-billion-every-year-due-to-inefficient-supply-chain-systems/8786.html#:~:text=India%20loses%20%2465%20billion%20every%20year%20due%20to%20inefficient%20supply%20chain%20systems&text=Though%20retail%20in%20India%20is,systems%2C%20says%20a%20study%20report.)
-
-2. [React and solidity](https://www.dappuniversity.com/articles/ethereum-dapp-react-tutorial)
+1. [Youtube demo](https://youtu.be/RPk9MBCP-_w)
+2. [Losses due to supply chain](https://www.moneylife.in/article/india-loses-65-billion-every-year-due-to-inefficient-supply-chain-systems/8786.html#:~:text=India%20loses%20%2465%20billion%20every%20year%20due%20to%20inefficient%20supply%20chain%20systems&text=Though%20retail%20in%20India%20is,systems%2C%20says%20a%20study%20report.)
+3. [React and solidity](https://www.dappuniversity.com/articles/ethereum-dapp-react-tutorial)
