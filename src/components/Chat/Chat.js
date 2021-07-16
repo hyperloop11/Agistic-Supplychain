@@ -101,7 +101,7 @@ useEffect(() => {
             })
          }
       }).then(() => {
-              if(message && message.user.toLowerCase()!=='admin')
+              if(message && message.user && message.user.toLowerCase()!=='admin')
               temp.push(message); 
               console.log("temp");
               console.log(temp);
@@ -116,20 +116,22 @@ useEffect(() => {
             });
      }); 
       socket.emit('sendMessage', message, () => setMessage('')); console.log("3"); console.log(messages);
-      var temp=[];
+      var temp2=[];
       messages.map((cur, i) => {    
         if(cur.user.toLowerCase()!=='admin')              
-         temp.push(cur);
-        }).then(()=>{ console.log("second"); console.log(temp);
+         temp2.push(cur);
+        });
+        // .then(()=>{ 
+          console.log("second"); console.log(temp2);
               app.database().ref('rooms/' + room ).set({
-                messages:temp,
+                messages:temp2,
             }, (error) => {
                 if (error) {
                   console.log("failed");
                 } 
                 else console.log("done");
             });
-       }); 
+      //  }); 
     }
   }
 
