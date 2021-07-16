@@ -23,29 +23,47 @@ The <b>immutability of blockchain</b> creates additional trust, transparency and
 
 The project is divided into two parts: the client side built using React JS and the server side, built with Node JS, Express and Firebase.
 
-##### The client
+### The client
 To run locally, make sure you have npm, ganache and truffle installed. Also, get Metamask browser extension to make the browser interact with the blockchain.
 
-1. move to the client directory and run the following command
+1. In the main directory and run the following command
+
     ```npm install```
 2. Make sure you have ganache-cli installed, and after that run 
+
+
    ```ganache cli```
 3. In a seprate terminal, complie and migrate the blockchian code.
+
+
    ```truffle compile```
+   
    ```truffle migrate```
+   
+   
 4. After this, start the server by running
+
+
    ```npm start```
 
-##### The server
+### The server
 Similarly for server, follow the given steps in a sepesrate termianl:
 
 1. Move to server directory and run
+
+
    ```npm install```
 2. Start the server by running:
+
+
    ```npm start```
 
 ## :books: Screen shots
-
+![image 1](https://assets.devfolio.co/hackathons/203325236b8942808406b7b0ba9ffd2e/projects/bd090e80fcea4494bb8729f3942fc49f/4d557309-9eac-4b91-bab8-4df59a098599.png)
+![image 2](https://assets.devfolio.co/hackathons/203325236b8942808406b7b0ba9ffd2e/projects/bd090e80fcea4494bb8729f3942fc49f/388e265d-c9b2-470a-9290-685d010f9d62.jpeg)
+![image 3](https://assets.devfolio.co/hackathons/203325236b8942808406b7b0ba9ffd2e/projects/bd090e80fcea4494bb8729f3942fc49f/41b08ae2-ee6b-4ee7-9251-f47108446381.jpeg)
+![image 4](https://assets.devfolio.co/hackathons/203325236b8942808406b7b0ba9ffd2e/projects/bd090e80fcea4494bb8729f3942fc49f/7cca8955-f129-410d-82f6-82fb900360da.png)
+![image 5](https://assets.devfolio.co/hackathons/203325236b8942808406b7b0ba9ffd2e/projects/bd090e80fcea4494bb8729f3942fc49f/ceb29d8e-8380-4079-87bd-a1bc1580bc8d.png)
 ## :desktop_computer: References
 1. [Losses due to supply chain](https://www.moneylife.in/article/india-loses-65-billion-every-year-due-to-inefficient-supply-chain-systems/8786.html#:~:text=India%20loses%20%2465%20billion%20every%20year%20due%20to%20inefficient%20supply%20chain%20systems&text=Though%20retail%20in%20India%20is,systems%2C%20says%20a%20study%20report.)
 
