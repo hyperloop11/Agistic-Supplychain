@@ -9,9 +9,9 @@ const home = () => {
 
 <section id="hero" className="d-flex align-items-center" >
     <div className="home_container" style={{paddingLeft:'40px'}}>
-      <h2>Tracking made Easy</h2>
+      <h2>Product tracing made Easy</h2>
 	  <a href="/track" style={{textDecoration:"none"}}  >
-		<button className="trackbtn" style={{outline:"none"}}>Track</button> </a>
+		<button className="trackbtn" style={{outline:"none"}}>Trace</button> </a>
     </div>
 	<img src="img/logo.png" />
   </section>
@@ -46,13 +46,13 @@ Secondly, we have a chat option with separate rooms where manufacturers can comm
 					</div>
 					<div className="col-xs-12 col-sm-6 col-md-4">
 						<img src="img/receive.png" width="40%" alt="IMAGE" className="img-fluid"/>
-						<h3>Receive your assessment</h3>
-						<p>lWithin 10 seconds, you'l receive the tracking details.</p>
+						<h3>Chat with collaborators</h3>
+						<p>Easily chat with warehouses, manufacturers and clients.</p>
 					</div>
 					<div className=" col-sm-12 col-md-4">
 						<img src="img/check.png" width="50%" alt="IMAGE" className="img-fluid"/>
-						<h3>Save and Check the details</h3>
-						<p>Securely save details and keep track of your products.</p>
+						<h3>Trace your product</h3>
+						<p>With the assurance of blockchain.</p>
 					</div>
 				</div>
 				</div>

@@ -68,7 +68,7 @@ class track_class extends Component {
     //Else
       //alert Error
     }else{
-      window.alert("SupplyC Chain not deployed to the detected network")
+      window.alert("Supply Chain not deployed to the detected network")
     }
   }
 
@@ -103,7 +103,7 @@ class track_class extends Component {
       searchProductShow: false,
       addNewItemResult: '',
       addNewItemShow:false,
-      scanLocationShow:false
+      scanLocationShow:false,
     }
 
     //Bind functions
@@ -131,11 +131,12 @@ class track_class extends Component {
       "https://geolocation-db.com/json/0fconsole.log(data)761a30-fe14-11e9-b59f-e53803842572"
     )
       .then(response => response.json())
-      .then(function(myJson) {
+      .then((myJson) => {
         console.log(myJson.city);
         jsonvariable = myJson
         output_string = jsonvariable.city +' '+jsonvariable.country_name+ 'the end'
         console.log(output_string)
+        this.setState({latitude: jsonvariable.latitude, longitude: jsonvariable.longitude, city: jsonvariable.city, scanLocationShow:true});
 
       })
       const self=this;

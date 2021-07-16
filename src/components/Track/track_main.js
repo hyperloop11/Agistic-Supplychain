@@ -3,6 +3,7 @@ import { convertBytes } from '../helpers';
 import moment from 'moment'
 import app from "../firebase/firebase.js";
 import ReactHtmlParser from 'react-html-parser';
+import Map from '../Map/map'
 
 import './Track.css';
 
@@ -42,7 +43,7 @@ class track_main extends Component {
       <div className="row top justify-content-center align-self-center" >
           <div>
               <h2 style={{color: 'black'}} >Search Product</h2>
-              <p>Enter Code and submit to get the tracking details.</p>
+              <p>Enter ID and submit to trace your product.</p>
               <div>
                   <div>
                   <form onSubmit={(event) => {
@@ -70,11 +71,11 @@ class track_main extends Component {
               </div>
           </div>
       </div>
-      { this.state.user!='user'? 
+      { this.state.user =='manufacturer' ? 
       <div className="row top justify-content-center align-self-center add" id="add" >
           <div>
               <h2 style={{color: 'black'}}>Add New Item</h2>
-              <p>Enter Product Id and location.</p>
+              <p>Enter name of product.</p>
               <div>
                   <div>
                   <form onSubmit={(event) => {
@@ -102,11 +103,11 @@ class track_main extends Component {
               </div>
           </div>
       </div> : console.log(this.state.user) }
-      { this.state.user =='manufacturer' ?
+      { this.state.user!='user' ?
       <div className="row top justify-content-center align-self-center scan" id="scan" >
-          <div>
+          <div style={{width:'100%'}}>
               <h2 style={{color: 'black'}}>Scan Shipment</h2>
-              <p>Enter Prodcut Id and location.</p>
+              <p>Enter Product Id and location is added automatically.</p>
               <div>
                   <div>
                   <form onSubmit={(event) => {
@@ -116,7 +117,7 @@ class track_main extends Component {
                   }} >
                       {/* <input type="text" name="scan_id" id="scan_id" style={{outline:'none'}} placeholder="13243656576" required />
                       <input type="text" name="scan_location" id="scan_location" style={{outline:'none'}} placeholder="New Delhi" required />  */}
-                      <input
+                      <input style={{width:'20%',margin:'auto'}}
                             id="addStateDescription"
                             type="text"
                             ref={(input) => { this.addStateDescription = input }}
@@ -124,6 +125,10 @@ class track_main extends Component {
                             placeholder="Product ID"
                             required /> 
                       <button type="submit" className="submitbtn" style={{outline:'none'}} >Scan</button>
+                      {this.props.scanLocationShow ?  <div className="justify-" > 
+                       <br></br>
+                      <Map city={this.props.city} lat={this.props.lat} long={this.props.long} />
+                     </div> : null }
                   </form>
                   </div>
               </div>
